@@ -106,7 +106,7 @@ export const FilterBar = () => {
             name='dark'
             id='dark'
           />
-          <label htmlFor='dark'>Trevas</label>
+          <label htmlFor='dark'>Sombrio</label>
         </div>
         <div className='group-type'>
           <input
