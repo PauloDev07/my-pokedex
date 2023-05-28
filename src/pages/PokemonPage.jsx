@@ -76,7 +76,7 @@ export const PokemonPage = () => {
                 </span>
               </div>
               <div className='stat-group'>
-                <span>Defensa</span>
+                <span>Defesa</span>
                 <div className='progress-bar'></div>
                 <span className='counter-stat'>
                   {pokemon.stats[2].base_stat}
