@@ -2,23 +2,23 @@
 
 :root {
   --color-fire: #ff7402;
-  --color-grass: #9bcc50;
-  --color-steel: #9eb7b8;
-  --color-water: #4592c4;
+  --color-grass: #009233;
+  --color-steel: #888888;
+  --color-water: #001aff;
   --color-psychic: #f366b9;
-  --color-ground: #ab9842;
-  --color-ice: #51c4e7;
-  --color-flying: #3dc7ef;
+  --color-ground: #854507;
+  --color-ice: #5fc5fc;
+  --color-flying: #006b70;
   --color-ghost: #4d5b64;
-  --color-normal: #a4acaf;
+  --color-normal: #272727;
   --color-poison: #7e0058;
   --color-rock: #a38c21;
-  --color-fighting: #d56723;
+  --color-fighting: #884f10;
   --color-dark: #707070;
-  --color-bug: #729f3f;
+  --color-bug: #154f00;
   --color-dragon: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
   --color-electric: #bba909;
-  --color-fairy: #fdb9e9;
+  --color-fairy: #ff009c;
   --color-shadow: #7b62a3;
   --color-unknow: #757575;
 
@@ -51,7 +51,7 @@ header {
   top: 0px;
   height: 80px;
   width: 100%;
-  backdrop-filter: blur(10px);
+  background: #ffcb05;
 }
 
 .logo img {
@@ -73,12 +73,29 @@ header form {
 }
 
 .form-group input {
-  font-family: inherit;
   width: 300px;
   border: none;
   outline: none;
   background: none;
   font-size: 20px;
+}
+
+::-webkit-input-placeholder {
+  color: #000;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+}
+
+:-ms-input-placeholder {
+  color: #000;
 }
 
 .icon-search {
@@ -150,12 +167,16 @@ header form {
   text-decoration: none;
 }
 
+/*background-color: #f2f2f24d;*/
 .card-img {
-  background-color: #f2f2f2;
+  background-image: url(https://freepngimg.com/thumb/pokemon/37693-6-pokeball-photos.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 50%;
   height: 250px;
 }
 
@@ -268,6 +289,10 @@ header form {
 
 /* Container Filters */
 .container-filters {
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp3170171.png&f=1&nofb=1&ipt=cc9e7e0…&ipo=images);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   color: #000;
@@ -351,7 +376,6 @@ Styles of Pokemon Single Page
 .container-info-pokemon {
   display: flex;
   flex-direction: column;
-
   order: 1;
   flex: 1;
 }
@@ -416,6 +440,7 @@ Styles of Pokemon Single Page
   background-color: var(--color-primary);
   border-radius: 10px;
 }
+
 /* Search Page */
 
 .p-search {
@@ -435,13 +460,6 @@ Styles of Pokemon Single Page
   backdrop-filter: blur(5px);
   flex-flow: column;
   align-items: center;
-}
-.text-loader {
-  margin-top: 75px 0;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  background-color: none;
 }
 
 .icon-loader {
@@ -494,9 +512,7 @@ Styles of Pokemon Single Page
 .container-btn-load-more {
   display: flex;
   justify-content: center;
-
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .btn-load-more {

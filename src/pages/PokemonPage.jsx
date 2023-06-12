@@ -41,7 +41,7 @@ export const PokemonPage = () => {
               <div className='card-types info-pokemon-type'>
                 {pokemon.types.map((type) => (
                   <span key={type.type.name} className={`${type.type.name}`}>
-                    {type.type.name}
+                    {upperInit(type.type.name)}
                   </span>
                 ))}
               </div>
